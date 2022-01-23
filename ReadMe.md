@@ -14,4 +14,11 @@ The "search term" should be a song name w/ artist. "Tempo" will automatically be
 
 
 ### Notes
-This code is being authored using execution from node, but may need to be refactored as the ultimate goal is to make this script's functionality available through a Chrome Extension.
+This code has been authored using execution from node.
+The ultimate goal is to run this script from inside of a Chrome Extension, so the final version will need to be refactored using puppeteer-web or puppeteer-core.
+This will demand a change from `puppeteer.launch` to `puppeter-connect()` to connect to **an existing chrome instance**.  
+Note that the Puppeteer team deprecated puppeteer-web but that a puppeteer-web bundle can be created used browserify.
+
+Helpful Links:  
+[Stack Overflow - Puppeteer Inside Chrome](https://stackoverflow.com/questions/55184255/can-i-use-puppeteer-inside-chrome-extension)  
+[Puppeteer-web Bundle through Browserify GitHub](https://github.com/entrptaher/puppeteer-web)
